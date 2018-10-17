@@ -5,11 +5,11 @@ class Application
 
     if t.hour < 12
       resp.write "Good Morning!"
-    if t.hour >= 12
+    elsif t.hour >= 12
       resp.write "Good Afternoon!"
     end
 
     resp.finish
   end
-  
+
 end
